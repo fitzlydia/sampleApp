@@ -80,4 +80,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # Default domain needed for Devise authentication
+  fitzlydia.herokuapp.com = { host: 'localhost:3000' }
 end
