@@ -82,5 +82,5 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # Default domain needed for Devise authentication
-  fitzlydia.herokuapp.com = { host: 'localhost:3000' }
+  config.action_mailer.default_url_options = { host: 'fitzlydia.herokuapp.com' }
 end
